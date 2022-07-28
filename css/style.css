@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+* {
+    margin: 0px;
+    padding:0px;
+}
+.logo {
+ font-family:fantasy;
+ color: black;
+font-size:x-large;
+
+}
+.inputNav {
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    background-color:lightblue;
+    border: solid;
+    border-width: 1px;
+    border-color: black ; 
+}
+nav{
+    background-color: lightblue;
+    color:black;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+font-size: x-small;
+border: solid;
+border-width: 1px;
+border-color: black ; 
+}
+nav {
+    list-style: none;
+    font-size: 100px;
+}
+
+li {
+    display: inline-block;
+    width: 17%;
+    position: relative;
+    font-size: 30px
+
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+ 
+}
+.article {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+   }
+.article {
+    background-color: white;
+}
+
+#imgHeader{
+    height: 250px;
+    width: 100%;
+    border: solid;
+    border-width: 1px;
+    border-color:black    
+}
+
+
+.boxModelArticle {
+  display: inline-block;
+text-align: left;
+background-color: lightblue;
+  border: solid;
+   border-width: 1px;
+   border-color: black ; 
+}
+ 
+
+.textDiv {
+  
+   border: solid;
+  
+   border-color: black ; 
+} 
+#text1 {
+    font-size: 3rem;
+} 
+#text2 {
+    font-size: 2rem;
+} 
+
+#imgIphone{
+    display: flex;
+    align-items: stretch;
+    height: 220%;
+    width: 100%;  
+    border-style: double;
+    border-color: black;
+      
+}
+
+
+.boxModelTable {
+    color: black;
+background-color:lightblue;
+width: 90%;
+height: 100px;
+margin-top: 15px;
+margin-right: 20px;
+margin-bottom: 25px;
+margin-left: 30px;
+padding: 5px 10px 15px 20px;
+border-style: double;
+border-width: 4px;
+border-color: black;
+text-align: center;
+}
+.tableMedio {
+    border-style:double;
+    border-width: 1px;
+    border-color: black;
+    ;
+}
+.tableEnvios {
+    border-style:double;
+    border-width: 1px;
+    border-color: black;
+}
+.tableDevoluciones {
+    border-style:double;
+    border-width: 1px;
+    border-color: black;
+}
+:root{
+   --facebook: #3b5999;
+   --instagram: #e4405f;
+   --twitter: #55acee;
+}
+
+.redes{
+    display: flex;
+
+    align-items: left;
+    justify-content: center;
+    
+}
+.redes ul li{
+    display: inline-block;
+    margin:0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.redes ul li a{
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color:#fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 2);
+    transition: .2s;
+
+}
+.redes ul:hover a {
+    filter: blur(2px)
+}
+.redes ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, );
+    filter:none
+} 
+.redes ul li .facebook:hoover{
+    background: var(--facebook);
+}
+.redes ul li .instagram:hoover{
+    background: var(--instagram);
+}
+.redes ul li .twitter:hoover{
+    background: var(--twitter);
+}
+.seguinos{
+margin: 5px 7px 9px 11px;
+border-style: solid;
+border-width: 2px;
+border-color: black;
+text-align: center;
+}
+
+.formulario {
+
+    margin: 5px 7px 9px 11px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    text-align: left;
+    padding: 5px 10px 15px 20px;
+}
+ #imgContacto {
+height: 150px;
+width: 100%;
+margin-top: 10px;
+margin-bottom: 10px;
+ }
+.comprar {
+   
+        display:flexbox;
+     
+        text-decoration: none;
+    }
+
+.imgVenta{
+    height: 300px;
+    width: 300px ;
+    color: black;
+    background-color:white;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    border-style: solid;
+    border-color: lightblue;
+    text-align: center;
+
+}
+
+.boxModelNav {
+        color: black;
+    background-color:white;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+.descripcion {
+    color: black;
+    text-align: center;
+    background-color: white;
+    font-family: 'Kanit', sans-serif
+}
+.titulo {
+    color: #3b5999;
+    background-color:white;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    border-style: solid;
+    border-color: lightblue;
+    text-align: center;
+}
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+section {
+    grid-area: section;
+}
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#reparacion, #accesorios, #maquinas  {
+    display: grid;  
+    grid-template-columns: auto;
+    grid-template-rows: 10% 15% auto 15%;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+  }
+  .sectionReparacion, .sectionAccesorios, .sectionMaquinas {
+    display: grid;
+      grid-template-columns: repeat(2,auto);
+      grid-template-rows: repeat(4,auto);
+      border-style: double;
+      border-color: lightblue;
+      text-align: center;
+    }
+      .sectionReparacion, .sectionAccesorios, .sectionMaquinas,.sectionIndex, .asideIndex,.sectionContacto   {
+      display: flex;
+      flex-wrap: wrap;    
+      align-items: stretch;
+      }
+      .boxModelVenta {
+          color: black;
+          background-color:white;
+          margin-top: 1px;
+          margin-right: 1px;
+          margin-bottom: 1px;
+          margin-left: 1px;
+          border-style: solid;
+          border-color: lightblue;
+          text-align: center;
+      }
+      #asideReparacion, #asideAccesorios, #asideMaquinas {
+          color: black;
+          background-color:lightblue;
+          margin-top: 1px;
+          margin-right: 1px;
+          margin-bottom: 1px;
+          margin-left: 1px;
+          border-style: solid;
+          border-color: black;
+          text-align: center;  
+      }
+ 
+                #index{
+                    display: grid;  
+  grid-template-columns: auto auto;
+  grid-template-rows: 10% 30% auto 20%;
+  column-gap: 5px;
+                         row-gap: 5px;
+                    grid-template-areas: "header header" "nav nav" "aside section" "footer footer";   
+                }
+                .sectionIndex{
+                    display: grid;
+                      grid-template-columns: repeat (auto);
+                      grid-template-rows: repeat(1,auto);
+                      border-style: solid;
+                      border-color: lightblue;
+                      text-align: center;
+                    }
+                     
+                        .asideIndex {
+                            color: black;
+                            background-color:lightblue;
+                            border-style: solid;
+                            border-color: black;
+                            text-align: center;  
+                        }  
+                    
+          #contacto{
+                            display: grid;  
+                    grid-template-columns: auto;
+                    grid-template-rows: 10% 30% auto 15%;
+                    column-gap: 5px;
+                    row-gap: 5px;
+                    grid-template-areas: "header" "nav" "section" "footer";   
+                        }
+                        .sectionContacto{
+                            display: grid;
+                              grid-template-columns:auto;
+                              grid-template-rows: auto;
+                              border-style: solid;
+                              border-color: lightblue;
+                            }
+                            
+                            @media screen and (min-width: 320px) {
+                                #index{
+                                    display: grid;  
+                                    grid-template-columns: auto;
+                                    grid-template-rows: 3% 10% auto 15%;
+                                    column-gap: 5px;
+                                    row-gap: 5px;
+                                    grid-template-areas: "header" "nav" "section" "footer";
+                         }
+                        .sectionIndex{
+                         display: grid;
+                         grid-template-columns: repeat (auto);
+                        grid-template-rows: repeat(1,auto);
+                        border-style: solid;
+                        border-color: lightblue;
+                        text-align: center;
+                        }
+                                         
+                        .asideIndex {
+                         color: black;
+                         background-color:lightblue;
+                         border-style: solid;
+                         border-color: black;
+                        text-align: center;  
+                        }  
+                        .sectionIndex,  .asideIndex {
+                        display: flex;
+                        flex-wrap: wrap;    
+                        align-items: stretch;
+                        }
+                        #menuBurger{
+                                display: flex;
+                                align-content:center ;
+                                 margin-top: 1px;
+                                 margin-right: 1px;
+                                margin-bottom: 1px;
+                                 margin-left: 1px;
+                                font-size: 2rem;
+                                }
+                        
+                        .inputNav{
+                            display: flex;
+                            align-content: center;
+                            margin-top: 1px;
+                            margin-right: 1px;
+                            margin-bottom: 1px;
+                         margin-left: 1px;
+                        }
+                        #asideIndex,.ulNav, .inputHeader, .sectionIndex{
+                         display: none;
+                        }
+                        }
+
+     @media screen and (min-width: 1200px) {
+        #index{
+            display: grid;  
+grid-template-columns: auto auto;
+grid-template-rows: 10% 30% auto 20%;
+column-gap: 5px;
+                 row-gap: 5px;
+            grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+             }
+            .sectionIndex{
+                display: grid;
+                  grid-template-columns: repeat (auto);
+                  grid-template-rows: repeat(1,auto);
+                  border-style: solid;
+                  border-color: lightblue;
+                  text-align: center;
+
+                }
+                 
+                    .asideIndex {
+                        color: black;
+                        background-color:lightblue;
+                        border-style: solid;
+                        border-color: black;
+                        text-align: center;  
+                    }  
+                    .sectionIndex,  .asideIndex {
+                            display: flex;
+                            flex-wrap: wrap;    
+                            align-items: center;
+                            }
+                            
+                                #asideIndex,.ulNav, .inputHeader, .sectionIndex{
+                                 display: block;
+                                }
+                                  .inputNav, #menuBurger {
+                                 display: none;
+                                }
+                    }
+
+    @media screen and (min-width: 320px) {
+    #reparacion{
+    display: grid;  
+    grid-template-columns: auto;
+    grid-template-rows: 3% 3% auto 15%;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "section" "footer";
+    }
+    .sectionReparacion {
+    display: grid;
+    grid-template-columns: repeat(auto);
+    grid-template-rows: repeat(auto);
+    border-style: double;
+    border-color: lightblue;
+    text-align: center;
+    }
+  .sectionReparacion  {
+   display: flex;
+   flex-wrap: wrap;    
+    align-items: stretch;
+   }
+    #asideReparacion {
+    color: black;
+    background-color:lightblue;
+     margin-top: 1px;
+     margin-right: 1px;
+     margin-bottom: 1px;
+    margin-left: 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;  
+     }
+    .inputNav{
+        display: flex;
+        align-content: center;
+    }
+    #asideReparacion,.ulNav, .inputHeader{
+     display: none;
+    }
+    }
+                
+    @media screen and (min-width: 1200px) {
+    #reparacion{
+    display: grid;  
+    grid-template-columns: auto;
+    grid-template-rows: 10% 15% auto 15%;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+    }
+    .sectionReparacion {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(4,auto);
+    border-style: double;
+    border-color: lightblue;
+    text-align: center;
+    }
+    .sectionReparacion  {
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: stretch;
+    }
+    #asideReparacion {
+    color: black;
+    background-color:lightblue;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;  
+    }
+    #asideReparacion,
+    .ulNav, .inputHeader {
+    display: block;
+     }
+      .inputNav {
+     display: none;
+    }
+    }
+
+   
