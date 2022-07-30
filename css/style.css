@@ -95,15 +95,18 @@ background-color: lightblue;
     font-size: 2rem;
 } 
 
-#imgIphone{
+.imgIphone{
     display: flex;
     align-items: stretch;
-    height: 220%;
+    height:200%;
     width: 100%;  
-    border-style: double;
+    border-style: solid;
     border-color: black;
-      
+    
 }
+
+
+
 
 
 .boxModelTable {
@@ -121,6 +124,7 @@ border-width: 4px;
 border-color: black;
 text-align: center;
 }
+
 .tableMedio {
     border-style:double;
     border-width: 1px;
@@ -154,7 +158,7 @@ text-align: center;
     display: inline-block;
     margin:0 5px;
     width: 50px;
-    height: 50px;
+    height: 55px;
     text-align: center;
 }
 .redes ul li a{
@@ -192,6 +196,9 @@ border-width: 2px;
 border-color: black;
 text-align: center;
 }
+.seguinos {
+    background-image: linear-gradient(to left,lightblue,white);
+}
 
 .formulario {
 
@@ -220,16 +227,22 @@ margin-bottom: 10px;
     width: 300px ;
     color: black;
     background-color:white;
-    margin-top: 1px;
-    margin-right: 1px;
-    margin-bottom: 1px;
-    margin-left: 1px;
+    margin-top: 1px 1px 1px 1px;
     border-style: solid;
     border-color: lightblue;
     text-align: center;
-
 }
-
+.imgVenta{
+    
+    background-color:lightblue;
+    border: solid 1px;
+}
+.imgVenta:hover {
+padding: 5px;
+transform:scale3d (25deg);
+transition: 0.2s;
+box-shadow: inset 0px 0px 10px;
+} 
 .boxModelNav {
         color: black;
     background-color:white;
@@ -248,7 +261,7 @@ margin-bottom: 10px;
     font-family: 'Kanit', sans-serif
 }
 .titulo {
-    color: #3b5999;
+    color: black;
     background-color:white;
     margin-top: 2px;
     margin-right: 2px;
@@ -257,6 +270,8 @@ margin-bottom: 10px;
     border-style: solid;
     border-color: lightblue;
     text-align: center;
+  
+    background-image: linear-gradient(to left,lightblue,white);
 }
 header {
     grid-area: header;
