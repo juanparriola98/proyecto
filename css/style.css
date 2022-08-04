@@ -9,52 +9,16 @@
 font-size:x-large;
 
 }
-.inputNav {
-    display: flex;
-    justify-content: space-between;
-}
+
+
+  
 header {
     background-color:lightblue;
     border: solid;
     border-width: 1px;
     border-color: black ; 
 }
-nav{
-    background-color: lightblue;
-    color:black;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
-font-size: x-small;
-border: solid;
-border-width: 1px;
-border-color: black ; 
-}
-nav {
-    list-style: none;
-    font-size: 100px;
-}
 
-li {
-    display: inline-block;
-    width: 17%;
-    position: relative;
-    font-size: 30px
-
-}
-
-ul ul {
-    position: absolute;
-    display: none;
-}
-
-ul ul li {
-    display: block;
-}
-
-ul li:hover ul {
-    display: block;
- 
-}
 .article {
     font-family: 'Quicksand', sans-serif;
     color: black;
@@ -64,7 +28,7 @@ ul li:hover ul {
 }
 
 #imgHeader{
-    height: 250px;
+    height: 350px;
     width: 100%;
     border: solid;
     border-width: 1px;
@@ -102,7 +66,6 @@ background-color: lightblue;
     width: 100%;  
     border-style: solid;
     border-color: black;
-    
 }
 
 
@@ -214,6 +177,9 @@ height: 150px;
 width: 100%;
 margin-top: 10px;
 margin-bottom: 10px;
+border-style: solid;
+    border-width: 2px;
+    border-color: black;
  }
 .comprar {
    
@@ -227,7 +193,8 @@ margin-bottom: 10px;
     width: 300px ;
     color: black;
     background-color:white;
-    margin-top: 1px 1px 1px 1px;
+    margin: 3px 3px 3px 3px;
+    padding: 3px 3px 3px 3px;
     border-style: solid;
     border-color: lightblue;
     text-align: center;
@@ -243,17 +210,7 @@ transform:scale3d (25deg);
 transition: 0.2s;
 box-shadow: inset 0px 0px 10px;
 } 
-.boxModelNav {
-        color: black;
-    background-color:white;
-    margin-top: 1px;
-    margin-right: 1px;
-    margin-bottom: 1px;
-    margin-left: 1px;
-    border-style: solid;
-    border-color: black;
-    text-align: center;
-}
+
 .descripcion {
     color: black;
     text-align: center;
@@ -294,7 +251,7 @@ footer {
 #reparacion, #accesorios, #maquinas  {
     display: grid;  
     grid-template-columns: auto;
-    grid-template-rows: 10% 15% auto 15%;
+    grid-template-rows: 10% 10% auto 15%;
     column-gap: 5px;
     row-gap: 5px;
     grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
@@ -380,7 +337,7 @@ footer {
                                 #index{
                                     display: grid;  
                                     grid-template-columns: auto;
-                                    grid-template-rows: 3% 10% auto 15%;
+                                    grid-template-rows: 3% 15% auto 15%;
                                     column-gap: 5px;
                                     row-gap: 5px;
                                     grid-template-areas: "header" "nav" "section" "footer";
@@ -406,15 +363,7 @@ footer {
                         flex-wrap: wrap;    
                         align-items: stretch;
                         }
-                        #menuBurger{
-                                display: flex;
-                                align-content:center ;
-                                 margin-top: 1px;
-                                 margin-right: 1px;
-                                margin-bottom: 1px;
-                                 margin-left: 1px;
-                                font-size: 2rem;
-                                }
+                       
                         
                         .inputNav{
                             display: flex;
@@ -424,7 +373,7 @@ footer {
                             margin-bottom: 1px;
                          margin-left: 1px;
                         }
-                        #asideIndex,.ulNav, .inputHeader, .sectionIndex{
+                        #asideIndex,  .sectionIndex{
                          display: none;
                         }
                         }
@@ -461,19 +410,18 @@ column-gap: 5px;
                             align-items: center;
                             }
                             
-                                #asideIndex,.ulNav, .inputHeader, .sectionIndex{
+                                #asideIndex, .sectionIndex{
                                  display: block;
                                 }
-                                  .inputNav, #menuBurger {
-                                 display: none;
+                                 
                                 }
-                    }
+                    
 
     @media screen and (min-width: 320px) {
     #reparacion{
     display: grid;  
     grid-template-columns: auto;
-    grid-template-rows: 3% 3% auto 15%;
+    grid-template-rows: 2% 2% auto 15%;
     column-gap: 5px;
     row-gap: 5px;
     grid-template-areas: "header" "nav" "section" "footer";
@@ -502,11 +450,9 @@ column-gap: 5px;
     border-color: black;
     text-align: center;  
      }
-    .inputNav{
-        display: flex;
-        align-content: center;
-    }
-    #asideReparacion,.ulNav, .inputHeader{
+   
+   
+    #asideReparacion,.ulNav{
      display: none;
     }
     }
@@ -515,7 +461,7 @@ column-gap: 5px;
     #reparacion{
     display: grid;  
     grid-template-columns: auto;
-    grid-template-rows: 10% 15% auto 15%;
+    grid-template-rows: 10% 10% auto 15%;
     column-gap: 5px;
     row-gap: 5px;
     grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
@@ -545,12 +491,10 @@ column-gap: 5px;
     text-align: center;  
     }
     #asideReparacion,
-    .ulNav, .inputHeader {
+    .ulNav {
     display: block;
      }
-      .inputNav {
-     display: none;
-    }
+     
     }
 
    
