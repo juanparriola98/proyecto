@@ -1,0 +1,181 @@
+
+@media screen and (min-width: 100px) and (max-width: 768px) {
+    #index{
+        display: grid;  
+        grid-template-columns: auto;
+        grid-template-rows: 3% 22% auto 15%;
+        column-gap: 5px;
+        row-gap: 5px;
+        grid-template-areas: "header" "nav" "section" "footer";
+}
+.sectionIndex{
+display: grid;
+grid-template-columns: repeat (auto);
+grid-template-rows: repeat(1,auto);
+border-style: $borderPrincipal;
+border-color: $colorPrincipal;
+text-align: $textAlignPrincipal;
+}
+             
+.asideIndex {
+color: $colorTerciario;
+background-color:$colorPrincipal;
+border-style: $borderPrincipal;
+border-color: $colorTerciario;
+text-align: $textAlignPrincipal;  
+}  
+.sectionIndex,  .asideIndex {
+display: flex;
+flex-wrap: wrap;    
+align-items: stretch;
+}
+.inputNav{
+display: flex;
+align-content: center;
+margin: $marginPrincipal;
+}
+#asideIndex,  .sectionIndex{
+display: none;
+}
+}
+
+@media screen and (min-width: 100px) and (max-width: 768px) {
+    #reparacion{
+    display: grid;  
+    grid-template-columns: auto;
+    grid-template-rows: 3% 5% auto 15%;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "section" "footer";
+    }
+    .sectionReparacion {
+    display: grid;
+    grid-template-columns: repeat(auto);
+    grid-template-rows: repeat(auto);
+    border-style: double;
+    border-color: $colorPrincipal;
+    text-align: $textAlignPrincipal;
+    justify-content: center;
+    }
+  .sectionReparacion  {
+   display: flex;
+   flex-wrap: wrap;    
+    align-items: stretch;
+   }
+   .boxModelVenta {
+    color: $colorTerciario;
+    background-color:$colorSecundario;
+    margin: $marginPrincipal;
+    border-style: $borderPrincipal;
+    border-color: $colorPrincipal;
+    text-align: $textAlignPrincipal;
+    font-family:$fontPrincipal;
+}
+    #asideReparacion {
+    color: $colorTerciario;
+    background-color:$colorPrincipal;
+    margin: $marginPrincipal;
+    border-style: $borderPrincipal;
+    border-color: $colorTerciario;
+    text-align: $textAlignPrincipal;  
+     }
+   
+   
+    #asideReparacion{
+     display: none;
+    }
+    }
+
+    @media screen and (min-width: 100px) and (max-width: 768px) {
+        #accesorios {
+        display: grid;  
+        grid-template-columns: auto;
+        grid-template-rows: 3% 5% auto 15%;
+        column-gap: 5px;
+        row-gap: 5px;
+        grid-template-areas: "header" "nav" "section" "footer";
+        }
+        .sectionAccesorios {
+        display: grid;
+        grid-template-columns: repeat(auto);
+        grid-template-rows: repeat(auto);
+        border-style: double;
+        border-color: $colorPrincipal;
+        justify-content: center;
+        text-align: $textAlignPrincipal;
+        }
+      .sectionAccesorios  {
+       display: flex;
+       flex-wrap: wrap;    
+        align-items: stretch;
+       }
+        #asideAccesorios {
+        color: $colorTerciario;
+        background-color:$colorPrincipal;
+        margin: $marginPrincipal;
+        border-style: $borderPrincipal;
+        border-color: $colorTerciario;
+        text-align: $textAlignPrincipal;  
+        font-family:$fontPrincipal ;
+         }
+         .boxModelVenta {
+            color: $colorTerciario;
+            background-color:$colorSecundario;
+            margin: $marginPrincipal;
+            border-style: $borderPrincipal;
+            border-color: $colorPrincipal;
+            text-align: $textAlignPrincipal;
+            font-family:$fontPrincipal ;
+
+        }
+       
+        #asideAccesorios{
+         display: none;
+        }
+        }
+        @media screen and (min-width: 100px) and (max-width: 768px) {
+            #maquinas {
+            display: grid;  
+            grid-template-columns: auto;
+            grid-template-rows: 3% 5% auto 15%;
+            column-gap: 5px;
+            row-gap: 5px;
+            grid-template-areas: "header" "nav" "section" "footer";
+            }
+            .sectionMaquinas {
+            display: grid;
+            grid-template-columns: repeat(auto);
+            grid-template-rows: repeat(auto);
+            border-style: double;
+            border-color: $colorPrincipal;
+            justify-content: center;
+            text-align: $textAlignPrincipal;
+            }
+          .sectionMaquinas  {
+           display: flex;
+           flex-wrap: wrap;    
+            align-items: stretch;
+           }
+            #asideMaquinas {
+            color: $colorTerciario;
+            background-color:$colorPrincipal;
+            margin: $marginPrincipal;
+            border-style: $borderPrincipal;
+            border-color: $colorTerciario;
+            text-align: $textAlignPrincipal;  
+            font-family:$fontPrincipal ;
+             }
+             .boxModelMaquinas {
+                color: $colorTerciario;
+                background-color:$colorSecundario;
+                margin: $marginPrincipal;
+                border-style: $borderPrincipal;
+                border-color: $colorPrincipal;
+                text-align: $textAlignPrincipal;
+                font-family:$fontPrincipal ;
+            }
+           
+            #asideMaquinas{
+             display: none;
+            }
+            }
