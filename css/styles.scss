@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+@import "variables";
+@import "mediaquery(mobile)";
+* {
+    margin: 0px;
+    padding:0px;
+}
+.logo {
+ font-family:$fontPrincipal;
+ color : $colorTerciario;
+font-size:x-large;
+
+}
+.navBar{
+    font-family:$fontPrincipal ;
+    font-weight: bold;
+    font-size: large;
+    border: $borderPrincipal;
+    border-color:$colorTerciario; 
+
+}
+header {
+    background-color:$colorPrincipal;
+    border: $borderPrincipal;
+    border: 1px;
+    border-color: $colorTerciario ; 
+    margin: $marginPrincipal;
+}
+
+.article {
+    font-family: 'Quicksand', sans-serif;
+    color: $colorTerciario;
+   }
+.article {
+    background-color: $colorSecundario;
+}
+
+#imgHeader{
+    height: 350px;
+    width: 100%;
+    border: $borderPrincipal;
+    border-color:$colorTerciario;   
+    margin: 2px 2px 2px 2px; 
+}
+
+.textDiv {
+   border: double;
+   border-color: $colorTerciario; 
+   background-color: $colorPrincipal;
+} 
+#text1 {
+    font-size: 3rem;
+} 
+#text2 {
+    font-size: 2rem;
+} 
+
+.imgIphone{
+    display: flex;
+    align-items: stretch;
+    height: 633px;
+    width: 100%;  
+    border-style: double;
+    border-color: $colorTerciario;
+    margin: 2px 2px 2px 2px;
+    padding: 2px 2px 2px 2px;
+}
+
+.boxModelTable {
+    color: $colorTerciario;
+background-color:$colorPrincipal;
+width:90%;
+height: 100px;
+margin-top: 15px;
+margin-right: 15px;
+margin-bottom: 15px;
+margin-left: 15px;
+border-style: double;
+border-color: $colorTerciario;
+text-align: $textAlignPrincipal;
+justify-content: center;
+}
+
+.tableMedio {
+    border-style:double;
+    border-width: 1px;
+    border-color: $colorTerciario;
+}
+.tableEnvios {
+    border-style:double;
+    border-width: 1px;
+    border-color: $colorTerciario;
+}
+.tableDevoluciones {
+    border-style:double;
+    border-width: 1px;
+    border-color: $colorTerciario;
+}
+:root{
+   --facebook: #3b5999;
+   --instagram: #e4405f;
+   --twitter: #55acee;
+}
+
+.redes{
+    display: flex;
+
+    align-items: left;
+    justify-content: center;
+    
+}
+.redes ul li{
+    display: inline-block;
+    margin:0 5px;
+    width: 50px;
+    height: 55px;
+    text-align: $textAlignPrincipal;
+ a{
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color:#fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 2);
+    transition: .2s;
+}
+}
+.redes ul:hover a {
+    filter: blur(2px)
+}
+.redes ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, );
+    filter:none
+} 
+.redes ul li .facebook:hoover{
+    background: var(--facebook);
+}
+.redes ul li .instagram:hoover{
+    background: var(--instagram);
+}
+.redes ul li .twitter:hoover{
+    background: var(--twitter);
+}
+.seguinos{
+margin: 5px 7px 9px 11px;
+border-style: $borderPrincipal;
+border-width: 2px;
+border-color: $colorTerciario;
+text-align: $textAlignPrincipal;
+background-image: linear-gradient(to left,$colorPrincipal,$colorSecundario);
+}
+
+.formulario {
+
+    margin: 5px 7px 9px 11px;
+    border-style: $borderPrincipal;
+    border-width: 2px;
+    border-color: $colorTerciario;
+    text-align: left;
+    padding: 5px 10px 15px 20px;
+}
+ #imgContacto {
+height: 150px;
+width: 100%;
+margin-top: 10px;
+margin-bottom: 10px;
+border-style: $borderPrincipal;
+    border-width: 2px;
+    border-color: $colorTerciario;
+ }
+.comprar {
+        display:flexbox;
+        text-decoration: none;
+    }
+
+.imgVenta{
+    height: 300px;
+    width: 300px ;
+    color: $colorTerciario;
+    background-color:$colorSecundario;
+    margin: 3px 3px 3px 3px;
+    padding: 3px 3px 3px 3px;
+    border-style: $borderPrincipal;
+    border-color: $colorPrincipal;
+    text-align: $textAlignPrincipal;
+    background-color:$colorPrincipal;
+    border: $borderPrincipal 1px;
+hover {
+padding: 5px;
+transform:scale3d (25deg);
+transition: 0.2s;
+box-shadow: inset 0px 0px 10px;
+} 
+}
+
+.descripcion {
+    color: $colorTerciario;
+    text-align: $textAlignPrincipal;
+    background-color:$colorSecundario;
+    font-family: 'Kanit', sans-serif
+}
+.titulo {
+    color: $colorTerciario;
+    background-color:$colorSecundario;
+    margin: 2px 2px 2px 2px; 
+    border-style: $borderPrincipal;
+    border-color: $colorPrincipal;
+    text-align: $textAlignPrincipal;
+  
+    background-image: linear-gradient(to left,$colorPrincipal,$colorSecundario);
+}
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+section {
+    grid-area: section;
+}
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#reparacion, #accesorios, #maquinas  {
+    display: grid;  
+    grid-template-columns: auto;
+    grid-template-rows: 10% 10% auto 15%;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+  }
+  .sectionReparacion, .sectionAccesorios, .sectionMaquinas {
+    display: grid;
+      grid-template-columns: repeat(2,auto);
+      grid-template-rows: repeat(4,auto);
+      border-style: double;
+      border-color: $colorPrincipal;
+      text-align: $textAlignPrincipal;
+    }
+      .sectionReparacion, .sectionAccesorios, .sectionMaquinas,.sectionIndex, .asideIndex,.sectionContacto   {
+      display: flex;
+      flex-wrap: wrap;    
+      align-items: stretch;
+      }
+      .boxModelVenta {
+          color: $colorTerciario;
+          background-color:$colorSecundario;
+          margin: $marginPrincipal;
+          border-style: $borderPrincipal;
+          border-color: $colorPrincipal;
+          text-align: $textAlignPrincipal;
+      }
+      #asideReparacion, #asideAccesorios, #asideMaquinas {
+          color: $colorTerciario;
+          background-color:$colorPrincipal;
+          margin: $marginPrincipal;
+          border-style: $borderPrincipal;
+          border-color: $colorTerciario;
+          text-align: $textAlignPrincipal;  
+      }
+ 
+                #index{
+                    display: grid;  
+  grid-template-columns: auto auto;
+  grid-template-rows: 5% 3% auto 20%;
+  column-gap: 5px;
+                         row-gap: 5px;
+                    grid-template-areas: "header header" "nav nav" "aside section" "footer footer";   
+                }
+                .sectionIndex{
+                    display: grid;
+                      grid-template-columns: repeat (auto);
+                      grid-template-rows: repeat(1,auto);
+                      border-style: $borderPrincipal;
+                      border-color: $colorPrincipal;
+                      text-align: $textAlignPrincipal;
+                    }
+                     
+                        .asideIndex {
+                            color: $colorTerciario;
+                            background-color:$colorPrincipal;
+                            border-style: $borderPrincipal;
+                            border-color: $colorTerciario;
+                            text-align: $colorTerciario;  
+                        }  
+                    
+          #contacto{
+                            display: grid;  
+                    grid-template-columns: auto;
+                    grid-template-rows: 10% 30% auto 15%;
+                    column-gap: 5px;
+                    row-gap: 5px;
+                    grid-template-areas: "header" "nav" "section" "footer";   
+                        }
+                        .sectionContacto{
+                            display: grid;
+                              grid-template-columns:auto;
+                              grid-template-rows: auto;
+                              border-style: $borderPrincipal;
+                              border-color: $colorPrincipal;
+                              margin: 2px 2px 2px 2px;
+                              padding:2px 2px 2px 2px ;
+                            }
+
+     @media screen and (min-width: 1200px) {
+        #index{
+            display: grid;  
+grid-template-columns: auto auto;
+grid-template-rows: 5% 30% auto 20%;
+column-gap: 5px;
+                 row-gap: 5px;
+            grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+             }
+            .sectionIndex{
+                display: grid;
+                  grid-template-columns: repeat (auto);
+                  grid-template-rows: repeat(1,auto);
+                  border-style: $borderPrincipal;
+                  border-color: $colorPrincipal;
+                  text-align: $textAlignPrincipal;
+                }
+                    .asideIndex {
+                        color: $colorTerciario;
+                        background-color:$colorPrincipal;
+                        border-style: $borderPrincipal;
+                        border-color: $colorTerciario;
+                        text-align: $textAlignPrincipal;  
+                    }  
+                    .sectionIndex,  .asideIndex {
+                            display: flex;
+                            flex-wrap: wrap;    
+                            align-items: center;
+                            }
+                            
+                                #asideIndex, .sectionIndex{
+                                 display: block;
+                                }
+                                 
+                                }
+                               
+    @media screen and (min-width: 1200px) {
+    #reparacion{
+    display: grid;  
+    grid-template-columns: auto;
+    grid-template-rows: 5% 10% auto 15%;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+    }
+    .sectionReparacion {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(4,auto);
+    border-style: double;
+    border-color: $colorPrincipal;
+    justify-content: center;
+    text-align: $textAlignPrincipal;
+    }
+    .sectionReparacion  {
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: stretch;
+    }
+    .boxModelVenta {
+        color: $colorTerciario;
+        background-color:$colorSecundario;
+        margin: $marginPrincipal;
+        border-style: $borderPrincipal;
+        border-color: $colorPrincipal;
+        text-align: $textAlignPrincipal;
+        font-family:$fontPrincipal;
+    }
+    #asideReparacion {
+    color: $colorTerciario;
+    background-color:$colorPrincipal;
+    margin: $marginPrincipal;
+    border-style: $borderPrincipal;
+    border-color:$colorTerciario;
+    text-align: $textAlignPrincipal;
+    font-family:$fontPrincipal;  
+    padding: 2px 2px 2px 2px;
+    }
+  
+    #asideReparacion {
+    display: block;
+     }
+    }             
+        @media screen and (min-width: 1200px) {
+        #accesorios{
+        display: grid;  
+        grid-template-columns: auto;
+        grid-template-rows: 10% 10% auto 15%;
+        column-gap: 5px;
+        row-gap: 5px;
+        grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+        }
+        .sectionAccesorios {
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(4,auto);
+        border-style: double;
+        border-color: $colorPrincipal;
+        justify-content: center;
+        text-align: $textAlignPrincipal;
+        }
+        .sectionAccesorios  {
+        display: flex;
+        flex-wrap: wrap;    
+        align-items: stretch;
+        }
+        #asideAccesorios {
+        color: $colorTerciario;
+        background-color:$colorPrincipal;
+        margin: $marginPrincipal;
+        border-style: $borderPrincipal;
+        border-color: $colorTerciario;
+        text-align: $textAlignPrincipal;  
+        font-family:$fontPrincipal ;
+        }
+        .boxModelVenta {
+            color: $colorTerciario;
+            background-color:$colorSecundario;
+            margin: $marginPrincipal;
+            border-style: $borderPrincipal;
+            border-color: $colorPrincipal;
+            text-align: $textAlignPrincipal;
+            font-family:$fontPrincipal ;
+
+        }
+        #asideAccesorios {
+        display: block;
+         }
+        }
+           
+            @media screen and (min-width: 1200px) {
+            #maquinas{
+            display: grid;  
+            grid-template-columns: auto;
+            grid-template-rows: 5% 10% auto 15%;
+            column-gap: 5px;
+            row-gap: 5px;
+            grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+            }
+            .sectionMaquinas {
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            grid-template-rows: repeat(4,auto);
+            border-style: double;
+            border-color: $colorPrincipal;
+            justify-content: center;
+            text-align: $textAlignPrincipal;
+            }
+            .sectionMaquinas  {
+            display: flex;
+            flex-wrap: wrap;    
+            align-items: stretch;
+            }
+            #asideMaquinas {
+            color: $colorTerciario;
+            background-color:$colorPrincipal;
+            margin: $marginPrincipal;
+            border-style: $borderPrincipal;
+            border-color: $colorTerciario;
+            text-align: $textAlignPrincipal;  
+            font-family:$fontPrincipal ;
+            }
+            .boxModelVenta {
+                color: $colorTerciario;
+                background-color:$colorSecundario;
+                margin: $marginPrincipal;
+                border-style: $borderPrincipal;
+                border-color: $colorPrincipal;
+                text-align: $textAlignPrincipal;
+                font-family:$fontPrincipal ;
+            }
+            #asideMaquinas {
+            display: block;
+             }
+            }
