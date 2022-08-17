@@ -5,11 +5,27 @@
     margin: 0px;
     padding:0px;
 }
+/*MAPA*/
+$colors: (
+colorPrincipal: lightblue,
+colorSecundario: white,
+colorTerciario: black,
+);
+/* MIXIN*/
+ @mixin width {
+    width:100%;
+ } 
+
+@mixin decoradoContacto ($color,$style){ 
+     text-decoration: underline;
+      text-decoration-color: $color;
+      text-decoration-style: $style;
+}
+
 .logo {
  font-family:$fontPrincipal;
  color : $colorTerciario;
-font-size:x-large;
-
+font-size:large;
 }
 .navBar{
     font-family:$fontPrincipal ;
@@ -34,19 +50,19 @@ header {
 .article {
     background-color: $colorSecundario;
 }
-
+/*MAP-GET*/ /* MIXIN SIN PARÁMETROS*/
 #imgHeader{
     height: 350px;
-    width: 100%;
-    border: $borderPrincipal;
-    border-color:$colorTerciario;   
+   @include width;
+    border: map-get($colors, colorPrincipal );
+    border-color:map-get($colors, colorTerciario);   
     margin: 2px 2px 2px 2px; 
 }
 
 .textDiv {
    border: double;
-   border-color: $colorTerciario; 
-   background-color: $colorPrincipal;
+   border-color: map-get($colors, colorTerciario); 
+   background-color: map-get($colors, colorPrincipal );
 } 
 #text1 {
     font-size: 3rem;
@@ -59,7 +75,7 @@ header {
     display: flex;
     align-items: stretch;
     height: 633px;
-    width: 100%;  
+    @include width;
     border-style: double;
     border-color: $colorTerciario;
     margin: 2px 2px 2px 2px;
@@ -69,12 +85,9 @@ header {
 .boxModelTable {
     color: $colorTerciario;
 background-color:$colorPrincipal;
-width:90%;
+@include width;
 height: 100px;
-margin-top: 15px;
-margin-right: 15px;
-margin-bottom: 15px;
-margin-left: 15px;
+margin: 15px, 15px, 15px, 15px;
 border-style: double;
 border-color: $colorTerciario;
 text-align: $textAlignPrincipal;
@@ -153,7 +166,6 @@ background-image: linear-gradient(to left,$colorPrincipal,$colorSecundario);
 }
 
 .formulario {
-
     margin: 5px 7px 9px 11px;
     border-style: $borderPrincipal;
     border-width: 2px;
@@ -161,9 +173,13 @@ background-image: linear-gradient(to left,$colorPrincipal,$colorSecundario);
     text-align: left;
     padding: 5px 10px 15px 20px;
 }
+.decoradoContacto {
+    @include decoradoContacto(black, double);
+    font-weight: bold;
+}
  #imgContacto {
 height: 150px;
-width: 100%;
+@include width;
 margin-top: 10px;
 margin-bottom: 10px;
 border-style: $borderPrincipal;
@@ -187,6 +203,7 @@ border-style: $borderPrincipal;
     text-align: $textAlignPrincipal;
     background-color:$colorPrincipal;
     border: $borderPrincipal 1px;
+
 hover {
 padding: 5px;
 transform:scale3d (25deg);
@@ -201,14 +218,12 @@ box-shadow: inset 0px 0px 10px;
     background-color:$colorSecundario;
     font-family: 'Kanit', sans-serif
 }
+/*EXTEND*/
 .titulo {
-    color: $colorTerciario;
-    background-color:$colorSecundario;
+ @extend .descripcion;
     margin: 2px 2px 2px 2px; 
     border-style: $borderPrincipal;
     border-color: $colorPrincipal;
-    text-align: $textAlignPrincipal;
-  
     background-image: linear-gradient(to left,$colorPrincipal,$colorSecundario);
 }
 header {
