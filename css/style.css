@@ -3,11 +3,19 @@
     margin: 0px;
     padding:0px;
 }
-.logo {
- font-family:fantasy;
- color: black;
-font-size:x-large;
-
+    .logo {
+       border: solid;
+       border-color: #333;
+       height:100px;
+       width: 100px;
+       margin: 20px ;
+       }
+.inputHeader {
+text-align: center;
+align-items: stretch;
+justify-content: center;
+margin-left: 200px;
+width: 30%;
 }
 .navBar{
     font-family:fantasy ;
@@ -33,7 +41,7 @@ header {
     background-color: white;
 }
 
-#imgHeader{
+.imgHeader{
     height: 350px;
     width: 100%;
     border: solid;
@@ -46,10 +54,10 @@ header {
    border-color: black; 
    background-color: lightblue;
 } 
-#text1 {
+.text1 {
     font-size: 3rem;
 } 
-#text2 {
+.text2 {
     font-size: 2rem;
 } 
 
@@ -162,7 +170,7 @@ text-align: center;
     text-align: left;
     padding: 5px 10px 15px 20px;
 }
- #imgContacto {
+ .imgContacto {
 height: 150px;
 width: 100%;
 margin-top: 10px;
@@ -170,11 +178,10 @@ margin-bottom: 10px;
 border-style: solid;
     border-width: 2px;
     border-color: black;
+  
  }
 .comprar {
-   
         display:flexbox;
-     
         text-decoration: none;
     }
 
@@ -320,7 +327,7 @@ footer {
                                 #index{
                                     display: grid;  
                                     grid-template-columns: auto;
-                                    grid-template-rows: 3% 22% auto 15%;
+                                    grid-template-rows: 6% 20% auto 15%;
                                     column-gap: 5px;
                                     row-gap: 5px;
                                     grid-template-areas: "header" "nav" "section" "footer";
@@ -333,7 +340,11 @@ footer {
                         border-color: lightblue;
                         text-align: center;
                         }
-                                         
+                        .inputHeader {
+                            align-items: center;
+                             width: 50%;
+                             margin: 1px 1px 1px 1px;
+                             }               
                         .asideIndex {
                          color: black;
                          background-color:lightblue;
@@ -360,10 +371,10 @@ footer {
         #index{
             display: grid;  
 grid-template-columns: auto auto;
-grid-template-rows: 5% 30% auto 20%;
+grid-template-rows: 10% 30% auto  30%;
 column-gap: 5px;
                  row-gap: 5px;
-            grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+            grid-template-areas: "header header" "nav nav" "aside section"  "footer footer";
              }
             .sectionIndex{
                 display: grid;
@@ -399,7 +410,7 @@ column-gap: 5px;
     #reparacion{
     display: grid;  
     grid-template-columns: auto;
-    grid-template-rows: 3% 5% auto 15%;
+    grid-template-rows: 4% 5% auto 15%;
     column-gap: 5px;
     row-gap: 5px;
     grid-template-areas: "header" "nav" "section" "footer";
@@ -413,6 +424,11 @@ column-gap: 5px;
     text-align: center;
     justify-content: center;
     }
+    .inputHeader {
+        align-items: center;
+         width: 50%;
+         margin: 1px 1px 1px 1px;
+         }
   .sectionReparacion  {
    display: flex;
    flex-wrap: wrap;    
@@ -446,7 +462,7 @@ column-gap: 5px;
     #reparacion{
     display: grid;  
     grid-template-columns: auto;
-    grid-template-rows: 5% 10% auto 15%;
+    grid-template-rows: 10% 10% auto 15%;
     column-gap: 5px;
     row-gap: 5px;
     grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
@@ -458,12 +474,12 @@ column-gap: 5px;
     border-style: double;
     border-color: lightblue;
     justify-content: center;
-    text-align: center;
+ 
     }
     .sectionReparacion  {
     display: flex;
     flex-wrap: wrap;    
-    align-items: stretch;
+   
     }
     .boxModelVenta {
         color: black;
@@ -475,27 +491,24 @@ column-gap: 5px;
         font-family:fantasy;
     }
     #asideReparacion {
-    color: black;
-    background-color:lightblue;
-    margin: 1px 1px 1px 1px;
-    border-style: solid;
-    border-color: black;
-    text-align: center;
-    font-family:fantasy;  
-    padding: 2px 2px 2px 2px;
+        color: black;
+        background-color:lightblue;
+        margin: 2px 2px 2px 2px;
+        border-style: solid;
+        border-color: black;
+        text-align: center;  
+        font-family:fantasy ;
     }
-  
     #asideReparacion {
     display: block;
      }
-     
     }
 
     @media screen and (min-width: 100px) and (max-width: 768px) {
         #accesorios {
         display: grid;  
         grid-template-columns: auto;
-        grid-template-rows: 3% 5% auto 15%;
+        grid-template-rows: 5% 5% auto 15%;
         column-gap: 5px;
         row-gap: 5px;
         grid-template-areas: "header" "nav" "section" "footer";
@@ -514,6 +527,11 @@ column-gap: 5px;
        flex-wrap: wrap;    
         align-items: stretch;
        }
+       .inputHeader {
+        align-items: center;
+         width: 50%;
+         margin: 1px 1px 1px 1px;
+         }
         #asideAccesorios {
         color: black;
         background-color:lightblue;
@@ -543,7 +561,7 @@ column-gap: 5px;
         #accesorios{
         display: grid;  
         grid-template-columns: auto;
-        grid-template-rows: 10% 10% auto 15%;
+        grid-template-rows: 11% 10% auto 15%;
         column-gap: 5px;
         row-gap: 5px;
         grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
@@ -590,7 +608,7 @@ column-gap: 5px;
             #maquinas {
             display: grid;  
             grid-template-columns: auto;
-            grid-template-rows: 3% 5% auto 15%;
+            grid-template-rows: 4% 5% auto 15%;
             column-gap: 5px;
             row-gap: 5px;
             grid-template-areas: "header" "nav" "section" "footer";
@@ -609,6 +627,11 @@ column-gap: 5px;
            flex-wrap: wrap;    
             align-items: stretch;
            }
+           .inputHeader {
+           align-items: center;
+            width: 50%;
+            margin: 1px 1px 1px 1px;
+            }
             #asideMaquinas {
             color: black;
             background-color:lightblue;
@@ -637,7 +660,7 @@ column-gap: 5px;
             #maquinas{
             display: grid;  
             grid-template-columns: auto;
-            grid-template-rows: 5% 10% auto 15%;
+            grid-template-rows: 10% 10% auto 15%;
             column-gap: 5px;
             row-gap: 5px;
             grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
