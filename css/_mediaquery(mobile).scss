@@ -3,7 +3,7 @@
     #index{
         display: grid;  
         grid-template-columns: auto;
-        grid-template-rows: 3% 22% auto 15%;
+        grid-template-rows: 6% 20% auto 15%;
         column-gap: 5px;
         row-gap: 5px;
         grid-template-areas: "header" "nav" "section" "footer";
@@ -90,7 +90,7 @@ display: none;
         #accesorios {
         display: grid;  
         grid-template-columns: auto;
-        grid-template-rows: 3% 5% auto 15%;
+        grid-template-rows: 5% 5% auto 15%;
         column-gap: 5px;
         row-gap: 5px;
         grid-template-areas: "header" "nav" "section" "footer";
@@ -137,7 +137,7 @@ display: none;
             #maquinas {
             display: grid;  
             grid-template-columns: auto;
-            grid-template-rows: 3% 5% auto 15%;
+            grid-template-rows: 4% 5% auto 15%;
             column-gap: 5px;
             row-gap: 5px;
             grid-template-areas: "header" "nav" "section" "footer";
