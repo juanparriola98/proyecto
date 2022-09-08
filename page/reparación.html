@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <meta name="description" content="En esta seccion en particular se encuentran exhibidos insumos para la reparación de celular">
-    <meta name="keywords" content="Reparación de Celulares, Insumos de Celulares, Iphone, Samsung, LG, Módulos, Baterias, Pin de Carga, Parlantes, Botón Home">
+    <meta name="keywords" content="Reparación de Celulares, Insumos de Celulares, Iphone, Airpod, Flex, Módulos, Baterias, Pin de Carga, Parlantes, Botón Home">
     <title>Reparación</title>
     <link rel="shortcut icon" href="../media/Logo.jpg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384/50oBUHEmvpQ+1lw4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -16,13 +16,19 @@
       
     <header>
       <img src="../media/Logo.jpg" alt="logo" class="logo">
-        <input class="inputHeader" type="search" placeholder="Buscar productos...">
+      <input class="inputHeader" type="search" placeholder="Buscar productos...">
+      <div class="btn">
+       <i class="fas fa-search icon"></i></div>
+       <div class="btn">
+       <i class="fas fa-shopping-basket"></i>
+      </div>
+
         </header>
         <nav>
        
           <div class="navBar">
         <ul class="ulNav">
-          <nav class="navbar navbar-expand-lg bg-light">
+          <nav class="navbar navbar-expand-lg ">
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Inicio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,22 +54,22 @@
           </div>
           </div>
         </nav>
-      
-  
-     <aside id="asideReparacion">
+        
+     <aside class="asideReparacion">
                 <p>INICIO/REPARACIÓN</p>
                
                     <p style= color:white>TIPO DE REPARACIÓN</p>
                    <ul>
                     <p>Módulo</p>
                    <p>Bateria</p>
-                   <P>Pin de Carga</P>
+                   <P>Flex pin de carga</P>
+                   <P>Cámara principal</P>
+                   <P>Cámara frontal</P>
                    </ul> 
-                   <p style= color:white>MARCAS</p>
+                   <p style= color:white>FILTRAR POR PRECIOS</p>
                    <ul>
-                     <p>Iphone</p>
-                   <p>Samsung</p>
-                   <p>LG</p>
+                     <p>$0-$10.000 ( 4 )</p>
+                     <p>+ $10.000 ( 11 )</p>
                    </ul>
                   
                 </aside>
@@ -71,7 +77,7 @@
          <article>
             <h2 class="titulo">REPARACIÓN</h2>
             <div class="container">
-              <p>Mostrando 1-10 de 70 artículo(s) </p>
+              <p>Mostrando 1-15 de 70 artículo(s) </p>
               <p> <select name=" relevancia" id=" relevancia">
   <option value=" relevancia"> relevancia</option>   
   <option value="ordenar por precio: de menor a mayor">ordenar por precio: de menor a mayor</option>
@@ -79,9 +85,18 @@
   <option value="A a Z">A a Z</option>
   <option value="Z a A">Z a A</option>
   </select></p>
+</div>
+<section class="sectionReparacion">
+   <div class="card">
+       <img src="../media/modulo iphone xs max.jpg" alt="módulo iphone xs max" class="imgVenta">
+        <p class="boxModelVenta">Módulo iphone  xs max</p> 
+        <p>Marca: iphone</p> 
+       <p>$25.000</p>
+       <p> Formas de Envío</p>
+       <p><a href="#" class="comprar">añadir al carrito </a></p> 
+    
             </div>
-         <section class="sectionReparacion">
-            <div class="animacion">
+            <div class="card">
                 <img src="../media/modulo-iph-11.jpg" alt="módulo iphone 11" class="imgVenta">
                 <p class="boxModelVenta">Módulo iphone 11</p> 
                 <p>Marca: iphone</p> 
@@ -89,71 +104,122 @@
                 <p> Formas de Envío</p>
                 <p><a href="#" class="comprar">añadir al carrito </a></p> 
             </div>
-
-            <div>
+            <div class="card">
                 <img src="../media/modulo-iph-11-pro.jpg" alt="módulo iphone 11 pro" class="imgVenta">
      <p class="boxModelVenta">Módulo iphone 11 pro</p> 
-     <p>Marca: iphone</p> 
+      <p>Marca: iphone</p> 
      <p>$20.000</p>
      <p> Formas de Envío</p>
      <p><a href="#" class="comprar">añadir al carrito </a></p> 
-            </div>
-
-            <div>
+    
+     </div>
+            <div class="card">
                 <img src="../media/modulo-iph-11-pro-max.jpg" alt="módulo iphone 11 pro max" class="imgVenta">
      <p class="boxModelVenta">Módulo iphone 11 pro max</p> 
-     <p>Marca: iphone</p> 
+      <p>Marca: iphone</p> 
      <p>$30.000</p>
      <p> Formas de Envío</p>
-     <p><a href="#" class="comprar">añadir al carrito </a></p> 
+     <p><a href="#" class="comprar">añadir al carrito </a></p>
+  
             </div>
 
-            <div>
+            <div class="card">
                 <img src="../media/modulo-iph-12-mini.jpg" alt="módulo iphone 12 modulo-iph-12-mini" class="imgVenta">
      <p class="boxModelVenta">Módulo iphone 12 mini</p> 
-     <p>Marca: iphone</p> 
+           <p>Marca: iphone</p> 
      <p>$35.000</p>
      <p> Formas de Envío</p>
      <p><a href="#" class="comprar">añadir al carrito </a></p> 
             </div>
-            
-                   <div>
+            <div class="card">
+              <img src="../media/bateria iphone xs max.jpg" alt="Bateria iphone xs max" class="imgVenta">
+   <p class="boxModelVenta">Bateria iphone xs max </p> 
+     <p>Marca: Iphone</p> 
+   <p>$8.000</p>
+   <p> Formas de Envío</p>
+   <p><a href="#" class="comprar">añadir al carrito </a></p>
+  
+   </div>    
+                   <div class="card">
                     <img src="../media/bateria-iphone-11.jpg" alt="Bateria iphone 11" class="imgVenta">
          <p class="boxModelVenta">Bateria iphone 11 </p> 
-         <p>Marca: Iphone</p> 
+            <p>Marca: Iphone</p> 
          <p>$10.000</p>
          <p> Formas de Envío</p>
          <p><a href="#" class="comprar">añadir al carrito </a></p>
-         </div>           
-
-                   <div>
+         </div>
+                  
+                   <div class="card">
                 <img src="../media/bateria-iphone-11-pro.jpg" alt="Bateria iphone 11 pro" class="imgVenta">
-     <p class="boxModelVenta">Bateria iphone 11 pro</p> 
-     <p>Marca: Iphone</p> 
+     <p class="boxModelVenta">Bateria iphone 11 pro</p>  
+       <p>Marca: Iphone</p> 
      <p>$15.000</p>
      <p> Formas de Envío</p>
      <p><a href="#" class="comprar">añadir al carrito </a></p>
      </div>
-        <div>
+        <div class="card">
         <img src="../media/bateria-iphone-11-pro-max.jpg" alt="Bateria iphone 11 pro max" class="imgVenta">
         <p class="boxModelVenta">Bateria iphone 11 pro max</p> 
-        <p>Marca: Iphone</p> 
+          <p>Marca: Iphone</p> 
         <p>$20.000</p>
         <p> Formas de Envío</p>
         <p><a href="#" class="comprar">añadir al carrito </a></p>
         </div>
-        <div>
+        
+        <div class="card">
             <img src="../media/bateria-iphone-12.jpg" alt="Bateria iphone 12" class="imgVenta">
             <p class="boxModelVenta">Bateria iphone 12</p> 
-            <p>Marca: Iphone</p> 
+                <p>Marca: Iphone</p> 
             <p>$25.000</p>
             <p> Formas de Envío</p>
             <p><a href="#" class="comprar">añadir al carrito </a></p>
-            </div>  
-       
+            </div> 
+           
+            <div class="card">
+              <img src="../media/flex pin de carga iphone Xs Max.jpg" alt="flex pin de carga iphone Xs Max" class="imgVenta">
+              <p class="boxModelVenta">Flex pin de carga iphone Xs Max</p> 
+                 <p>Marca: Iphone</p> 
+              <p>$5.000</p>
+              <p> Formas de Envío</p>
+              <p><a href="#" class="comprar">añadir al carrito </a></p>
+              </div> 
+              
+              <div class="card">
+                <img src="../media/flex pin de carga iphone 11.jpg" alt="flex pin de carga iphone 11" class="imgVenta">
+                <p class="boxModelVenta">Flex pin de carga iphone 11</p> 
+                  <p>Marca: Iphone</p> 
+                <p>$6.000</p>
+                <p> Formas de Envío</p>
+                <p><a href="#" class="comprar">añadir al carrito </a></p>
+                </div> 
+
+                <div class="card">
+                  <img src="../media/flex pin de carga iphone 11 pro.jpg" alt="flex pin de carga iphone 11 pro" class="imgVenta">
+                  <p class="boxModelVenta">Flex pin de carga iphone 11 pro</p> 
+                     <p>Marca: Iphone</p> 
+                  <p>$7.000</p>
+                  <p> Formas de Envío</p>
+                  <p><a href="#" class="comprar">añadir al carrito </a></p>
+                  </div> 
+                  <div class="card">
+                    <img src="../media/camara frontal iphone 11.jpg" alt="cámara frontal " class="imgVenta">
+                    <p class="boxModelVenta">Cámara frontal iphone 11</p> 
+                       <p>Marca: Iphone</p> 
+                    <p>$5.000</p>
+                    <p> Formas de Envío</p>
+                    <p><a href="#" class="comprar">añadir al carrito </a></p>
+                    </div>
+                    <div class="card">
+                      <img src="../media/camara principal iphone 11.jpg" alt="cámara principal " class="imgVenta">
+                      <p class="boxModelVenta">Cámara principal iphone 11</p> 
+                         <p>Marca: Iphone</p> 
+                      <p>$15.000</p>
+                      <p> Formas de Envío</p>
+                      <p><a href="#" class="comprar">añadir al carrito </a></p>
+                      </div>
             </section>
           </article>
-    
+
         <footer>
         <table class="boxModelTable">
             <div class="gradienteTable">
@@ -164,17 +230,52 @@
             </table>
 
             <img src="../media/Logo.jpg" alt="logo" class="logo">
-       <p class="seguinos">¡SEGUINOS!</p>
-        <div class="redes">
-    <ul>
-        <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>  
-        <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-    <p>  Copyright © 2022 elrepar</p> 
- 
+            <div class="main-content">
+              <div class="left box">
+                <h2>Nosotros</h2>
+                <div class="content">
+                  <p>Somos servicio técnico especializado en la marca apple. Trabajamos con altos estándares de calidad y contamos con más de 5 años de experiencia en el rubro. Nuestro objetivo es brindarte el mejor servicio en el menor tiempo y con garantía escrita para tu mayor tranquilidad...</p>
+                  <div class="social">
+                    <a target="_blank" href="#"><span class="fab fa-facebook-f"></span></a>
+                    <a target="_blank" href="#"><span class="fab fa-twitter"></span></a>
+                    <a target="_blank" href="#"><span class="fab fa-instagram"></span></a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="center box">
+                <h2>Ubicación</h2>
+                <div class="content">
+                  <div class="place">
+                    <p class="fas fa-map-marker-alt"></p>
+                    <p class="text">Buenos Aires, Argentina</p>
+                  </div>
+                  <div class="phone">
+                    <p class="fas fa-phone"></p>
+                    <p class="text">+54 9 01155021051</p>
+                  </div>
+                  <div class="email">
+                    <p class="fas fa-envelope"></p>
+                    <p class="text">Email: elrepar@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="right box">
+                <h2>HORARIO DE ATENCIÓN</h2>
+                <div class="content">
+                  <div class="place">
+                    <p class="text">Lunes-Viernes/9:00-17:00 hs</p>
+                  </div>
+            
+                </div>
+              </div>
+              </div>
+              <div class="bottom">
+                  <span class="credit">
+                    <a>elrepar</a></span>
+                  <span class="far fa-copyright"></span><span> 2022.</span>
+              </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>    
 </body>
-
 </html>
