@@ -30,11 +30,6 @@
     flex-wrap: wrap;
     align-items: stretch;
   }
-  .inputNav {
-    display: flex;
-    align-content: center;
-    margin: 1px 1px 1px 1px;
-  }
   #asideIndex, .sectionIndex {
     display: none;
   }
@@ -175,6 +170,17 @@
   #asideMaquinas {
     display: none;
   }
+  footer {
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box {
+    margin: 5px 0;
+  }
 }
 * {
   margin: 0px;
@@ -229,18 +235,18 @@ header {
   background-color: lightblue;
 }
 
-#text1 {
+.text1 {
   font-size: 3rem;
-}
-
-#text2 {
-  font-size: 2rem;
+  font-family: "Anton", sans-serif;
+  padding: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px;
+  background-color: whitesmoke;
+  border: double black;
 }
 
 .imgIphone {
-  display: flex;
   align-items: stretch;
-  height: 633px;
+  height: 568px;
   width: 100%;
   border-style: double;
   border-color: black;
@@ -253,90 +259,32 @@ header {
   background-color: lightblue;
   width: 100%;
   height: 100px;
-  margin: 15px, 15px, 15px, 15px;
+  margin-top: 15px 15px 15px 15px;
   border-style: double;
   border-color: black;
   text-align: center;
-  justify-content: center;
 }
 
-.tableMedio {
+.tableMedio, .tableEnvios, .tableDevoluciones {
   border-style: double;
   border-width: 1px;
   border-color: black;
 }
 
-.tableEnvios {
-  border-style: double;
-  border-width: 1px;
-  border-color: black;
+.card-body {
+  margin: 10px 10px 10px 10px;
 }
 
-.tableDevoluciones {
-  border-style: double;
-  border-width: 1px;
-  border-color: black;
+.card {
+  margin: 7px 7px 7px 7px;
 }
 
-:root {
-  --facebook: #3b5999;
-  --instagram: #e4405f;
-  --twitter: #55acee;
-}
-
-.redes {
-  display: flex;
-  align-items: left;
-  justify-content: center;
-}
-
-.redes ul li {
-  display: inline-block;
-  margin: 0 5px;
-  width: 50px;
-  height: 55px;
-  text-align: center;
-}
-.redes ul li a {
-  display: block;
-  padding: 0 10px;
-  background: #333;
-  color: #fff;
-  line-height: 50px;
-  font-size: 18px;
-  box-shadow: 0 3px 5px 0px rgb(0, 0, 0);
-  transition: 0.2s;
-}
-
-.redes ul:hover a {
-  filter: blur(2px);
-}
-
-.redes ul li a:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 3px 5px 0px rgb(0, 0, 0);
-  filter: none;
-}
-
-.redes ul li .facebook:hoover {
-  background: var(--facebook);
-}
-
-.redes ul li .instagram:hoover {
-  background: var(--instagram);
-}
-
-.redes ul li .twitter:hoover {
-  background: var(--twitter);
-}
-
-.seguinos {
-  margin: 5px 7px 9px 11px;
+.marca {
+  width: 90%;
   border-style: solid;
-  border-width: 2px;
+  border: 2px 2px 2px 2px;
   border-color: black;
-  text-align: center;
-  background-image: linear-gradient(to left, lightblue, white);
+  margin: 30px 30px 30px 100px;
 }
 
 .formulario {
@@ -348,28 +296,13 @@ header {
   padding: 5px 10px 15px 20px;
 }
 
-.decoradoContacto {
-  text-decoration: underline;
-  -webkit-text-decoration-color: black;
-          text-decoration-color: black;
-  -webkit-text-decoration-style: double;
-          text-decoration-style: double;
-  font-weight: bold;
-}
-
 #imgContacto {
   height: 150px;
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 30px 30px 30px;
   border-style: solid;
   border-width: 2px;
   border-color: black;
-}
-
-.comprar {
-  display: flexbox;
-  text-decoration: none;
 }
 
 .imgVenta {
@@ -385,11 +318,22 @@ header {
   background-color: lightblue;
   border: solid 1px;
 }
-.imgVenta hover {
-  padding: 5px;
-  transform: scale3d 25deg;
-  transition: 0.2s;
-  box-shadow: inset 0px 0px 10px;
+
+.imgVenta {
+  background-color: lightblue;
+  border: solid 1px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.imgVenta {
+  transition: 0, 5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.imgVenta:hover {
+  transform: scale(1.2);
 }
 
 .descripcion, .titulo {
@@ -405,6 +349,96 @@ header {
   border-style: solid;
   border-color: lightblue;
   background-image: linear-gradient(to left, lightblue, white);
+}
+
+.main-content {
+  display: flex;
+}
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.box .content:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 15%;
+  background: lightblue;
+  top: -10px;
+}
+
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  background: white;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.left .content .social a span:hover {
+  background: lightblue;
+}
+
+.center .content .fas {
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.center .content .fas:hover {
+  background: lightblue;
+}
+
+.center .content .text {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.bottom {
+  background-color: lightblue;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+section {
+  grid-area: section;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
 }
 
 header {
@@ -441,8 +475,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(4, auto);
-  border-style: double;
-  border-color: lightblue;
   text-align: center;
 }
 
@@ -450,15 +482,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-}
-
-.boxModelVenta {
-  color: black;
-  background-color: white;
-  margin: 1px 1px 1px 1px;
-  border-style: solid;
-  border-color: lightblue;
-  text-align: center;
 }
 
 #asideReparacion, #asideAccesorios, #asideMaquinas {
@@ -473,7 +496,7 @@ footer {
 #index {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 5% 3% auto 20%;
+  grid-template-rows: 6% 20% auto auto;
   -moz-column-gap: 5px;
        column-gap: 5px;
   row-gap: 5px;
@@ -494,13 +517,13 @@ footer {
   background-color: lightblue;
   border-style: solid;
   border-color: black;
-  text-align: black;
+  text-align: center;
 }
 
 #contacto {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 10% 30% auto 15%;
+  grid-template-rows: 10% 15% auto auto;
   -moz-column-gap: 5px;
        column-gap: 5px;
   row-gap: 5px;
@@ -511,17 +534,48 @@ footer {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  border-style: solid;
-  border-color: lightblue;
   margin: 2px 2px 2px 2px;
   padding: 2px 2px 2px 2px;
 }
 
+@media screen and (min-width: 100px) and (max-width: 768px) {
+  #index {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5% 11% 15% auto;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "section" "footer";
+  }
+  .sectionIndex {
+    display: grid;
+    grid-template-columns: repeat auto;
+    grid-template-rows: repeat(1, auto);
+    border-style: solid;
+    border-color: lightblue;
+    text-align: center center;
+  }
+  .inputHeader {
+    align-items: center;
+    width: 50%;
+    margin: 1px 1px 1px 1px;
+  }
+  .text1 {
+    font-size: 1.5rem;
+    font-family: "Times New Roman", Times, serif;
+    padding: 6px 6px 6px 6px;
+    margin: 2px 2px 2px 2px;
+  }
+  #asideIndex, .marca, .imgContacto, .boxModelTable, .sectionIndex {
+    display: none;
+  }
+}
 @media screen and (min-width: 1200px) {
   #index {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 5% 30% auto 20%;
+    grid-template-rows: 6% 20% auto auto;
     -moz-column-gap: 5px;
          column-gap: 5px;
     row-gap: 5px;
@@ -547,15 +601,49 @@ footer {
     flex-wrap: wrap;
     align-items: center;
   }
-  #asideIndex, .sectionIndex {
+  #asideIndex, .marca, .imgContacto, .boxModelTable .sectionIndex {
     display: block;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 768px) {
+  #reparacion {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 3% 2% auto auto;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "section" "footer";
+  }
+  .sectionReparacion {
+    display: grid;
+    grid-template-columns: repeat(auto);
+    grid-template-rows: repeat(auto);
+    text-align: center;
+    justify-content: center;
+  }
+  .inputHeader {
+    align-items: center;
+    width: 50%;
+    margin: 1px 1px 1px 1px;
+  }
+  .sectionReparacion {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .container {
+    margin-left: 20px;
+  }
+  .asideReparacion {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
   #reparacion {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 5% 10% auto 15%;
+    grid-template-rows: 5% 3% auto auto;
     -moz-column-gap: 5px;
          column-gap: 5px;
     row-gap: 5px;
@@ -565,26 +653,70 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, auto);
-    border-style: double;
-    border-color: lightblue;
     justify-content: center;
-    text-align: center;
   }
   .sectionReparacion {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
   }
-  .boxModelVenta {
+  .asideReparacion {
+    color: black;
+    background-color: lightblue;
+    margin: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+  }
+  .asideReparacion {
+    display: block;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 768px) {
+  #accesorios {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 3% 2% auto auto;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "section" "footer";
+  }
+  .sectionAccesorios {
+    display: grid;
+    grid-template-columns: repeat(auto);
+    grid-template-rows: repeat(auto);
+    justify-content: center;
+    text-align: center;
+  }
+  .container {
+    margin-left: 50px;
+  }
+  .sectionAccesorios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .imgVenta {
+    height: 270px;
+    width: 270px;
     color: black;
     background-color: white;
-    margin: 1px 1px 1px 1px;
+    margin: 5px 5px 5px 5px;
+    padding: 3px 3px 3px 3px;
     border-style: solid;
     border-color: lightblue;
     text-align: center;
-    font-family: fantasy;
   }
-  #asideReparacion {
+  .inputHeader {
+    align-items: center;
+    width: 50%;
+    margin: 1px 1px 1px 1px;
+  }
+  #asideAccesorios {
     color: black;
     background-color: lightblue;
     margin: 1px 1px 1px 1px;
@@ -592,17 +724,16 @@ footer {
     border-color: black;
     text-align: center;
     font-family: fantasy;
-    padding: 2px 2px 2px 2px;
   }
-  #asideReparacion {
-    display: block;
+  #asideAccesorios {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
   #accesorios {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 10% 10% auto 15%;
+    grid-template-rows: 5% 3% auto auto;
     -moz-column-gap: 5px;
          column-gap: 5px;
     row-gap: 5px;
@@ -612,8 +743,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, auto);
-    border-style: double;
-    border-color: lightblue;
     justify-content: center;
     text-align: center;
   }
@@ -629,26 +758,62 @@ footer {
     border-style: solid;
     border-color: black;
     text-align: center;
-    font-family: fantasy;
-  }
-  .boxModelVenta {
-    color: black;
-    background-color: white;
-    margin: 1px 1px 1px 1px;
-    border-style: solid;
-    border-color: lightblue;
-    text-align: center;
-    font-family: fantasy;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
   }
   #asideAccesorios {
     display: block;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 768px) {
+  #maquinas {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 3% 2% auto auto;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "section" "footer";
+  }
+  .sectionMaquinas {
+    display: grid;
+    grid-template-columns: repeat(auto);
+    grid-template-rows: repeat(auto);
+    justify-content: center;
+    text-align: center;
+  }
+  .sectionMaquinas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .inputHeader {
+    align-items: center;
+    width: 50%;
+    margin: 1px 1px 1px 1px;
+  }
+  .container {
+    margin-left: 50px;
+  }
+  #asideMaquinas {
+    color: black;
+    background-color: lightblue;
+    margin: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    font-family: fantasy;
+  }
+  #asideMaquinas {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
   #maquinas {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 5% 10% auto 15%;
+    grid-template-rows: 6% 4% auto auto;
     -moz-column-gap: 5px;
          column-gap: 5px;
     row-gap: 5px;
@@ -658,8 +823,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, auto);
-    border-style: double;
-    border-color: lightblue;
     justify-content: center;
     text-align: center;
   }
@@ -675,18 +838,46 @@ footer {
     border-style: solid;
     border-color: black;
     text-align: center;
-    font-family: fantasy;
-  }
-  .boxModelVenta {
-    color: black;
-    background-color: white;
-    margin: 1px 1px 1px 1px;
-    border-style: solid;
-    border-color: lightblue;
-    text-align: center;
-    font-family: fantasy;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
   }
   #asideMaquinas {
     display: block;
   }
+}
+@media screen and (min-width: 100px) and (max-width: 768px) {
+  footer {
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box {
+    margin: 5px 0;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 768px) {
+  #contacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 10% auto auto;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "section" "footer";
+  }
+}
+.sectionContacto {
+  display: grid;
+  grid-template-columns: repeat(auto);
+  grid-template-rows: repeat(auto);
+}
+
+.sectionContacto {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
 }/*# sourceMappingURL=styles.css.map */

@@ -29,11 +29,6 @@ display: flex;
 flex-wrap: wrap;    
 align-items: stretch;
 }
-.inputNav{
-display: flex;
-align-content: center;
-margin: $marginPrincipal;
-}
 #asideIndex,  .sectionIndex{
 display: none;
 }
@@ -178,4 +173,17 @@ display: none;
             #asideMaquinas{
              display: none;
             }
+            footer{
+                position: relative;
+                bottom: 0px;
+              }
+              .main-content{
+                flex-wrap: wrap;
+                flex-direction: column;
+              }
+              .main-content .box{
+                margin: 5px 0;
+              }
+          
+            
             }

@@ -42,7 +42,9 @@ header {
     border-color: $colorTerciario ; 
     margin: $marginPrincipal;
 }
-
+.container{
+  margin-left: 1000px;
+}
 .article {
     font-family: 'Quicksand', sans-serif;
     color: $colorTerciario;
@@ -64,17 +66,18 @@ header {
    border-color: map-get($colors, colorTerciario); 
    background-color: map-get($colors, colorPrincipal );
 } 
-#text1 {
+.text1 {
     font-size: 3rem;
-} 
-#text2 {
-    font-size: 2rem;
+    font-family: 'Anton', sans-serif;
+    padding: 15px 15px 15px 15px ;
+    margin: 10px 10px 10px 10px;
+    background-color: whitesmoke;
+     border: double $colorTerciario ;
 } 
 
 .imgIphone{
-    display: flex;
     align-items: stretch;
-    height: 633px;
+    height: 568px;
     @include width;
     border-style: double;
     border-color: $colorTerciario;
@@ -83,87 +86,34 @@ header {
 }
 
 .boxModelTable {
-    color: $colorTerciario;
+color: $colorTerciario;
 background-color:$colorPrincipal;
 @include width;
 height: 100px;
-margin: 15px, 15px, 15px, 15px;
+margin-top: 15px 15px 15px 15px;
 border-style: double;
 border-color: $colorTerciario;
-text-align: $textAlignPrincipal;
-justify-content: center;
+text-align:  $textAlignPrincipal;
 }
-
-.tableMedio {
+.tableMedio,.tableEnvios, .tableDevoluciones  {
     border-style:double;
     border-width: 1px;
     border-color: $colorTerciario;
-}
-.tableEnvios {
-    border-style:double;
-    border-width: 1px;
-    border-color: $colorTerciario;
-}
-.tableDevoluciones {
-    border-style:double;
-    border-width: 1px;
-    border-color: $colorTerciario;
-}
-:root{
-   --facebook: #3b5999;
-   --instagram: #e4405f;
-   --twitter: #55acee;
-}
-
-.redes{
-    display: flex;
-
-    align-items: left;
-    justify-content: center;
-    
-}
-.redes ul li{
-    display: inline-block;
-    margin:0 5px;
-    width: 50px;
-    height: 55px;
-    text-align: $textAlignPrincipal;
- a{
-    display: block;
-    padding: 0 10px;
-    background: #333;
-    color:#fff;
-    line-height: 50px;
-    font-size: 18px;
-    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 2);
-    transition: .2s;
-}
-}
-.redes ul:hover a {
-    filter: blur(2px)
-}
-.redes ul li a:hover{
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, );
-    filter:none
-} 
-.redes ul li .facebook:hoover{
-    background: var(--facebook);
-}
-.redes ul li .instagram:hoover{
-    background: var(--instagram);
-}
-.redes ul li .twitter:hoover{
-    background: var(--twitter);
-}
-.seguinos{
-margin: 5px 7px 9px 11px;
-border-style: $borderPrincipal;
-border-width: 2px;
-border-color: $colorTerciario;
-text-align: $textAlignPrincipal;
-background-image: linear-gradient(to left,$colorPrincipal,$colorSecundario);
-}
+ }   
+ .card-body{
+    margin: 10px 10px 10px 10px;
+  }
+   .card{
+      margin:7px 7px 7px 7px ;
+   }
+  
+  .marca {
+      width: 90%;
+      border-style: $borderPrincipal;
+      border: 2px 2px 2px 2px;
+      border-color: $colorTerciario;
+      margin: 30px 30px 30px 100px;
+    }
 
 .formulario {
     margin: 5px 7px 9px 11px;
@@ -173,23 +123,16 @@ background-image: linear-gradient(to left,$colorPrincipal,$colorSecundario);
     text-align: left;
     padding: 5px 10px 15px 20px;
 }
-.decoradoContacto {
-    @include decoradoContacto(black, double);
-    font-weight: bold;
-}
+
  #imgContacto {
 height: 150px;
 @include width;
-margin-top: 10px;
-margin-bottom: 10px;
+margin: 30px 30px 30px ;
 border-style: $borderPrincipal;
     border-width: 2px;
     border-color: $colorTerciario;
  }
-.comprar {
-        display:flexbox;
-        text-decoration: none;
-    }
+
 
 .imgVenta{
     height: 300px;
@@ -203,13 +146,19 @@ border-style: $borderPrincipal;
     text-align: $textAlignPrincipal;
     background-color:$colorPrincipal;
     border: $borderPrincipal 1px;
-
-hover {
-padding: 5px;
-transform:scale3d (25deg);
-transition: 0.2s;
-box-shadow: inset 0px 0px 10px;
+}
+.imgVenta{
+    background-color:$colorPrincipal;
+    border: $borderPrincipal 1px;
+    overflow: hidden;
+    margin: 20px;
+}
+.imgVenta{
+transition: 0,5s;
+object-fit: cover;
 } 
+.imgVenta:hover {
+  transform: scale(1.2) ;
 }
 
 .descripcion {
@@ -226,6 +175,85 @@ box-shadow: inset 0px 0px 10px;
     border-color: $colorPrincipal;
     background-image: linear-gradient(to left,$colorPrincipal,$colorSecundario);
 }
+.main-content{
+    display: flex;
+  }
+  .main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+  }
+  .box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+  }
+  
+  .box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: $colorPrincipal;
+    top: -10px;
+  }
+  
+  .left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: $colorSecundario;
+    line-height: 40px;
+    text-align:  $textAlignPrincipal;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .left .content .social a span:hover{
+    background: $colorPrincipal;
+  }
+  .center .content .fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align:  $textAlignPrincipal;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .center .content .fas:hover{
+    background: $colorPrincipal;
+  }
+  .center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  .bottom {
+  background-color: $colorPrincipal;
+  }
+  
+  header {
+      grid-area: header;
+  }
+  
+  nav {
+      grid-area: nav;
+  }
+  section {
+      grid-area: section;
+  }
+  aside {
+      grid-area: aside;
+  }
+  
+  footer {
+      grid-area: footer;
+  }
 header {
     grid-area: header;
 }
@@ -256,39 +284,30 @@ footer {
     display: grid;
       grid-template-columns: repeat(2,auto);
       grid-template-rows: repeat(4,auto);
-      border-style: double;
-      border-color: $colorPrincipal;
-      text-align: $textAlignPrincipal;
+      text-align:  $textAlignPrincipal;
     }
       .sectionReparacion, .sectionAccesorios, .sectionMaquinas,.sectionIndex, .asideIndex,.sectionContacto   {
       display: flex;
       flex-wrap: wrap;    
       align-items: stretch;
       }
-      .boxModelVenta {
-          color: $colorTerciario;
-          background-color:$colorSecundario;
-          margin: $marginPrincipal;
-          border-style: $borderPrincipal;
-          border-color: $colorPrincipal;
-          text-align: $textAlignPrincipal;
-      }
+
       #asideReparacion, #asideAccesorios, #asideMaquinas {
           color: $colorTerciario;
           background-color:$colorPrincipal;
-          margin: $marginPrincipal;
+          margin:$marginPrincipal;
           border-style: $borderPrincipal;
           border-color: $colorTerciario;
-          text-align: $textAlignPrincipal;  
+          text-align:  $textAlignPrincipal;  
       }
  
-                #index{
-                    display: grid;  
-  grid-template-columns: auto auto;
-  grid-template-rows: 5% 3% auto 20%;
-  column-gap: 5px;
-                         row-gap: 5px;
-                    grid-template-areas: "header header" "nav nav" "aside section" "footer footer";   
+      #index{
+        display: grid;  
+grid-template-columns: auto auto;
+grid-template-rows: 6% 20% auto  auto;
+column-gap: 5px;
+             row-gap: 5px;
+        grid-template-areas: "header header" "nav nav" "aside section"  "footer footer";
                 }
                 .sectionIndex{
                     display: grid;
@@ -296,7 +315,7 @@ footer {
                       grid-template-rows: repeat(1,auto);
                       border-style: $borderPrincipal;
                       border-color: $colorPrincipal;
-                      text-align: $textAlignPrincipal;
+                      text-align:  $textAlignPrincipal;
                     }
                      
                         .asideIndex {
@@ -304,13 +323,13 @@ footer {
                             background-color:$colorPrincipal;
                             border-style: $borderPrincipal;
                             border-color: $colorTerciario;
-                            text-align: $colorTerciario;  
+                            text-align:  $textAlignPrincipal;  
                         }  
                     
           #contacto{
                             display: grid;  
                     grid-template-columns: auto;
-                    grid-template-rows: 10% 30% auto 15%;
+                    grid-template-rows: 10% 15% auto auto;
                     column-gap: 5px;
                     row-gap: 5px;
                     grid-template-areas: "header" "nav" "section" "footer";   
@@ -319,20 +338,52 @@ footer {
                             display: grid;
                               grid-template-columns:auto;
                               grid-template-rows: auto;
-                              border-style: $borderPrincipal;
-                              border-color: $colorPrincipal;
                               margin: 2px 2px 2px 2px;
                               padding:2px 2px 2px 2px ;
                             }
+                            
+                            @media screen and (min-width: 100px) and (max-width: 768px) {
+                                #index{
+                                    display: grid;  
+                                    grid-template-columns: auto;
+                                    grid-template-rows: 5% 11% 15% auto;
+                                    column-gap: 5px;
+                                    row-gap: 5px;
+                                    grid-template-areas: "header" "nav" "section" "footer";
+                         }
+                        .sectionIndex{
+                         display: grid;
+                         grid-template-columns: repeat (auto);
+                        grid-template-rows: repeat(1,auto);
+                        border-style: $borderPrincipal;
+                        border-color: $colorPrincipal;
+                        text-align:  $textAlignPrincipal $textAlignPrincipal;
+                        }
+                        .inputHeader {
+                            align-items: center;
+                             width: 50%;
+                             margin: $marginPrincipal;
+                             } 
+                             .text1 {
+                              font-size: 1.5rem;
+                              font-family: 'Times New Roman', Times, serif;
+                              padding: 6px 6px 6px 6px ;
+                              margin: 2px 2px 2px 2px; 
+                          }               
+
+                        #asideIndex, .marca, .imgContacto, .boxModelTable,  .sectionIndex{
+                         display: none;
+                        }
+                        }
 
      @media screen and (min-width: 1200px) {
         #index{
             display: grid;  
 grid-template-columns: auto auto;
-grid-template-rows: 5% 30% auto 20%;
+grid-template-rows: 6% 20% auto  auto;
 column-gap: 5px;
                  row-gap: 5px;
-            grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+            grid-template-areas: "header header" "nav nav" "aside section"  "footer footer";
              }
             .sectionIndex{
                 display: grid;
@@ -340,32 +391,69 @@ column-gap: 5px;
                   grid-template-rows: repeat(1,auto);
                   border-style: $borderPrincipal;
                   border-color: $colorPrincipal;
-                  text-align: $textAlignPrincipal;
+                  text-align:  $textAlignPrincipal;
                 }
+
                     .asideIndex {
                         color: $colorTerciario;
                         background-color:$colorPrincipal;
-                        border-style: $borderPrincipal;
+                        border-style:$borderPrincipal;
                         border-color: $colorTerciario;
-                        text-align: $textAlignPrincipal;  
+                        text-align:  $textAlignPrincipal;  
                     }  
                     .sectionIndex,  .asideIndex {
                             display: flex;
                             flex-wrap: wrap;    
-                            align-items: center;
+                            align-items:  $textAlignPrincipal;
                             }
                             
-                                #asideIndex, .sectionIndex{
+                                #asideIndex,.marca, .imgContacto, .boxModelTable .sectionIndex{
                                  display: block;
                                 }
                                  
                                 }
-                               
+                    
+    @media screen and (min-width: 100px) and (max-width: 768px) {
+    #reparacion{
+    display: grid;  
+    grid-template-columns: auto;
+    grid-template-rows: 3% 2% auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "header" "nav" "section" "footer";
+  }
+    .sectionReparacion {
+    display: grid;
+    grid-template-columns: repeat(auto);
+    grid-template-rows: repeat(auto);
+    text-align:  $textAlignPrincipal;
+    justify-content: center;
+    }
+    .inputHeader {
+        align-items: center;
+         width: 50%;
+         margin:$marginPrincipal;
+         }
+       
+  .sectionReparacion  {
+   display: flex;
+   flex-wrap: wrap;    
+    align-items: stretch;
+   }
+  
+.container{
+    margin-left: 20px;
+}
+    .asideReparacion{
+     display: none;
+    }
+    }
+                
     @media screen and (min-width: 1200px) {
     #reparacion{
     display: grid;  
     grid-template-columns: auto;
-    grid-template-rows: 5% 10% auto 15%;
+    grid-template-rows: 5% 3% auto auto;
     column-gap: 5px;
     row-gap: 5px;
     grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
@@ -374,45 +462,90 @@ column-gap: 5px;
     display: grid;
     grid-template-columns: repeat(2,auto);
     grid-template-rows: repeat(4,auto);
-    border-style: double;
-    border-color: $colorPrincipal;
     justify-content: center;
-    text-align: $textAlignPrincipal;
     }
     .sectionReparacion  {
     display: flex;
     flex-wrap: wrap;    
     align-items: stretch;
     }
-    .boxModelVenta {
+  
+    .asideReparacion {
         color: $colorTerciario;
-        background-color:$colorSecundario;
+        background-color:$colorPrincipal;
         margin: $marginPrincipal;
         border-style: $borderPrincipal;
-        border-color: $colorPrincipal;
-        text-align: $textAlignPrincipal;
-        font-family:$fontPrincipal;
+        border-color: $colorTerciario;
+        text-align:  $textAlignPrincipal;  
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        padding: 10px 10px 10px 10px;
+        font-weight: bold;
     }
-    #asideReparacion {
-    color: $colorTerciario;
-    background-color:$colorPrincipal;
-    margin: $marginPrincipal;
-    border-style: $borderPrincipal;
-    border-color:$colorTerciario;
-    text-align: $textAlignPrincipal;
-    font-family:$fontPrincipal;  
-    padding: 2px 2px 2px 2px;
-    }
-  
-    #asideReparacion {
+    .asideReparacion {
     display: block;
      }
-    }             
+    }
+
+    @media screen and (min-width: 100px) and (max-width: 768px) {
+        #accesorios {
+        display: grid;  
+        grid-template-columns: auto;
+        grid-template-rows: 3% 2% auto auto;
+        column-gap: 5px;
+        row-gap: 5px;
+        grid-template-areas: "header" "nav" "section" "footer";
+        }
+        .sectionAccesorios {
+        display: grid;
+        grid-template-columns: repeat(auto);
+        grid-template-rows: repeat(auto);
+        justify-content: center;
+        text-align:  $textAlignPrincipal;
+        }
+        .container{
+            margin-left: 50px;
+        }
+      .sectionAccesorios  {
+       display: flex;
+       flex-wrap: wrap;    
+        align-items: stretch;
+       }
+       .imgVenta{
+        height: 270px;
+        width: 270px ;
+        color: $colorTerciario;
+        background-color:$colorSecundario;
+        margin: 5px 5px 5px 5px;
+        padding: 3px 3px 3px 3px;
+        border-style: $borderPrincipal;
+        border-color: $colorPrincipal;
+        text-align:  $textAlignPrincipal;  
+       }
+       .inputHeader {
+        align-items: center;
+         width: 50%;
+         margin: $marginPrincipal;
+         }
+        #asideAccesorios {
+        color: $colorTerciario;
+        background-color:$colorPrincipal;
+        margin:$marginPrincipal;
+        border-style: $borderPrincipal;
+        border-color: $colorTerciario;
+        text-align:  $textAlignPrincipal;  
+        font-family:$fontPrincipal ;
+         }
+       
+        #asideAccesorios{
+         display: none;
+        }
+        }
+                    
         @media screen and (min-width: 1200px) {
         #accesorios{
         display: grid;  
         grid-template-columns: auto;
-        grid-template-rows: 10% 10% auto 15%;
+        grid-template-rows: 5% 3% auto auto;
         column-gap: 5px;
         row-gap: 5px;
         grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
@@ -421,10 +554,8 @@ column-gap: 5px;
         display: grid;
         grid-template-columns: repeat(2,auto);
         grid-template-rows: repeat(4,auto);
-        border-style: double;
-        border-color: $colorPrincipal;
         justify-content: center;
-        text-align: $textAlignPrincipal;
+        text-align:  $textAlignPrincipal;
         }
         .sectionAccesorios  {
         display: flex;
@@ -432,34 +563,71 @@ column-gap: 5px;
         align-items: stretch;
         }
         #asideAccesorios {
-        color: $colorTerciario;
-        background-color:$colorPrincipal;
-        margin: $marginPrincipal;
-        border-style: $borderPrincipal;
-        border-color: $colorTerciario;
-        text-align: $textAlignPrincipal;  
-        font-family:$fontPrincipal ;
+          color: $colorTerciario;
+          background-color:$colorPrincipal;
+          margin: $marginPrincipal;
+          border-style: $borderPrincipal;
+          border-color: $colorTerciario;
+          text-align:  $textAlignPrincipal;  
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+          padding: 10px 10px 10px 10px;
+          font-weight: bold;
         }
-        .boxModelVenta {
-            color: $colorTerciario;
-            background-color:$colorSecundario;
-            margin: $marginPrincipal;
-            border-style: $borderPrincipal;
-            border-color: $colorPrincipal;
-            text-align: $textAlignPrincipal;
-            font-family:$fontPrincipal ;
-
-        }
+    
         #asideAccesorios {
         display: block;
          }
         }
+        @media screen and (min-width: 100px) and (max-width: 768px) {
+            #maquinas {
+            display: grid;  
+            grid-template-columns: auto;
+            grid-template-rows: 3% 2% auto auto;
+            column-gap: 5px;
+            row-gap: 5px;
+            grid-template-areas: "header" "nav" "section" "footer";
+            }
+            .sectionMaquinas {
+            display: grid;
+            grid-template-columns: repeat(auto);
+            grid-template-rows: repeat(auto);
+            justify-content: center;
+            text-align:  $textAlignPrincipal;
+            }
+          .sectionMaquinas  {
+           display: flex;
+           flex-wrap: wrap;    
+            align-items: stretch;
+           }
+           .inputHeader {
+           align-items: center;
+            width: 50%;
+            margin: $marginPrincipal;
+            }
+            .container{
+                margin-left: 50px;
+            }
            
+            #asideMaquinas {
+            color: $colorTerciario;
+            background-color:$colorPrincipal;
+            margin:$marginPrincipal;
+            border-style: $borderPrincipal;
+            border-color: $colorTerciario;
+            text-align:  $textAlignPrincipal;  
+            font-family:$fontPrincipal ;
+             }
+           
+            #asideMaquinas{
+             display: none;
+            }
+            }
+                        
             @media screen and (min-width: 1200px) {
             #maquinas{
             display: grid;  
             grid-template-columns: auto;
-            grid-template-rows: 5% 10% auto 15%;
+            grid-template-rows: 6% 4% auto auto;
             column-gap: 5px;
             row-gap: 5px;
             grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
@@ -468,10 +636,8 @@ column-gap: 5px;
             display: grid;
             grid-template-columns: repeat(2,auto);
             grid-template-rows: repeat(4,auto);
-            border-style: double;
-            border-color: $colorPrincipal;
             justify-content: center;
-            text-align: $textAlignPrincipal;
+            text-align:  $textAlignPrincipal;
             }
             .sectionMaquinas  {
             display: flex;
@@ -479,24 +645,54 @@ column-gap: 5px;
             align-items: stretch;
             }
             #asideMaquinas {
-            color: $colorTerciario;
-            background-color:$colorPrincipal;
-            margin: $marginPrincipal;
-            border-style: $borderPrincipal;
-            border-color: $colorTerciario;
-            text-align: $textAlignPrincipal;  
-            font-family:$fontPrincipal ;
+              color: $colorTerciario;
+              background-color:$colorPrincipal;
+              margin:$marginPrincipal;
+              border-style: $borderPrincipal;
+              border-color: $colorTerciario;
+              text-align:  $textAlignPrincipal;  
+              font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+              padding: 10px 10px 10px 10px;
+              font-weight: bold;
             }
-            .boxModelVenta {
-                color: $colorTerciario;
-                background-color:$colorSecundario;
-                margin: $marginPrincipal;
-                border-style: $borderPrincipal;
-                border-color: $colorPrincipal;
-                text-align: $textAlignPrincipal;
-                font-family:$fontPrincipal ;
-            }
+          
             #asideMaquinas {
             display: block;
              }
             }
+
+              @media screen and (min-width: 100px) and (max-width: 768px) {
+                footer{
+                  position: relative;
+                  bottom: 0px;
+                }
+                .main-content{
+                  flex-wrap: wrap;
+                  flex-direction: column;
+                }
+                .main-content .box{
+                  margin: 5px 0;
+                }
+              }
+  @media screen and (min-width: 100px) and (max-width: 768px) {
+            #contacto {
+            display: grid;  
+            grid-template-columns: auto;
+            grid-template-rows: 10% 10% auto auto;
+            column-gap: 5px;
+            row-gap: 5px;
+            grid-template-areas: "header" "nav" "section" "footer";
+            }
+          }
+          .sectionContacto {
+            display: grid;
+            grid-template-columns: repeat(auto);
+            grid-template-rows: repeat(auto);
+          }
+          .sectionContacto{
+            display: flex;
+            flex-wrap: wrap;    
+            align-items: stretch;
+            }
+      
+      
